@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: url(./pexels-kaique-rocha-125510.jpg) no-repeat center;
+            /* padding: 0 auto; */
+            /* width: 100%; */
+            /* height: ; */
+            display: flex;
+            place-content : center;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            margin: 90px;
+            width:400px;
+            height: 450px;
+            background-color: rgba(0,0,0,0.5);
+            border-radius: 25px;
+            box-shadow: inset -5px -5px rgba(0,0,0,0.5);
+            align-items: center;
+        }
+          form h1{
+            font-size: 2rem;
+            color:rgb(226, 226, 226);
+          }
+          .form{
+            width:80%;
+            height:80%;
+            /* border: 2px solid; */
+            display: flex;
+            flex-direction: column;
+          }
+          .form *{
+            padding: 6px
+          }
+          form label{
+           color:rgb(202, 201, 201);
+          }
+          input, .button{
+            border-radius: 15px;
+            border: 0;
+          }
+          .INFO:hover{
+            border-radius:0;
+            background-color: rgba(0,0,0,0.3);
+            color:rgb(238, 238, 238);
+            border:  2px black solid;
+            border-top: 0;
+            border-right:0 ;
+            transition:0.2s ease;
+            /* box-shadow: -2px -2px; */
+            border-radius: 5px;
+          }
+          .button{
+            width:150px;
+            margin-top:15px;
+            align-self: center;
+            cursor: pointer;
+          }
+       .or{
+        text-align: center;
+        color:rgb(207, 206, 206);
+       }
+       #others{
+        width:100%;
+        display: flex;
+        justify-content: space-around;
+       }
+       .others{
+        width:125px;
+        color:rgb(43, 43, 43);
+        font-weight: 900;
+       }
+       a{
+        text-decoration: none;
+        color: rgb(160, 221, 221);
+       }
+       .condition, .login{
+        align-self: center;
+       }
+    </style>
+</head>
+<body>
+   
+    <form action="" method="post">
+        <h1>SignUp</h1>
+       <div class="form">
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username" class="INFO" placeholder="e.g. RM_code" required>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" class="INFO" placeholder="e.g. abcd@gmail.com" required>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required min="8" max="16" class="INFO" >
+        <input type="button" class="button" value="sigh up">
+        <p class="or">Or by</p>
+        <div id="others">
+       <a href="http://www.google.com"><input type="button" value="GOOGLE" class="others"></a>
+      <a href="http://www.facebook.com"> <input type="button" value="FACEBOOK" class="others"></a>
+    </div>
+      <div class="condition">
+        <label for="checkbox" class="terms">Agreed to <a href="# " >our terms and conditions</a></label>
+        <input type="checkbox" name="checkbox" id="checkbox">
+      </div>
+        <p class="login">Already have an account?<a href="# ">login.</a> </p>   
+    </div>
+    </form>
+</body>
+</html>
